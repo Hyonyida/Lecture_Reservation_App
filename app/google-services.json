@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1030527927558",
+    "firebase_url": "https://lecture-reservation-7166a-default-rtdb.firebaseio.com",
+    "project_id": "lecture-reservation-7166a",
+    "storage_bucket": "lecture-reservation-7166a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030527927558:android:b4c638acbd19bda2998a87",
+        "android_client_info": {
+          "package_name": "com.example.lecture_reservation_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030527927558-7nmi9p4f37vsvfp934g6hcc8vg2kq5u7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNj5vqFnxuFIWvqHO_Jst1_PmVNCzFSVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030527927558-7nmi9p4f37vsvfp934g6hcc8vg2kq5u7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030527927558:android:c43d78eacaaffe84998a87",
+        "android_client_info": {
+          "package_name": "com.example.libraryreservationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030527927558-7nmi9p4f37vsvfp934g6hcc8vg2kq5u7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNj5vqFnxuFIWvqHO_Jst1_PmVNCzFSVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030527927558-7nmi9p4f37vsvfp934g6hcc8vg2kq5u7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
