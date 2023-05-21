@@ -32,7 +32,7 @@
             android:layout_row="1"
             android:layout_columnSpan="2"
             android:layout_column="0"
-            android:max="15"
+            android:max="30"
             android:progress="1"/>
 
         <Switch
@@ -54,13 +54,13 @@
             android:text="@string/wifi" />
 
         <Switch
-            android:id="@+id/switchWhiteboard"
+            android:id="@+id/switchEngineering"
             style="@style/Switches"
             android:layout_gravity="fill_horizontal"
             android:layout_columnSpan="2"
             android:layout_row="4"
             android:layout_column="0"
-            android:text="@string/whiteboard" />
+            android:text="@string/engineering" />
 
         <TextView
             android:id="@+id/building"
@@ -83,13 +83,13 @@
                 android:id="@+id/radioButtonBusiness"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/business" />
+                android:text="@string/nurigan" />
 
             <RadioButton
                 android:id="@+id/radioButtonConklin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/conklin" />
+                android:text="@string/hyangpagan" />
         </RadioGroup>
 
         <EditText

@@ -62,7 +62,7 @@ public class SeeAccountsListActivity extends AppCompatActivity {
 
     private void setUpRecyclerView() {
         // creates a query that uses the collection reference to get the ram id's in ascending order
-        Query query = fStore.collection("users").orderBy("ram_id", Query.Direction.ASCENDING);
+        Query query = fStore.collection("users").orderBy("student_id", Query.Direction.ASCENDING);
 
         // creates configurations for the adapter and binds the query to the recyclerView
         // .setLifecycleOwner(this) allows for deletion of onStart and onStop overrides

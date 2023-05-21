@@ -26,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistrationActivity extends AppCompatActivity {
-    EditText firstName, lastName, ramId, email, password;
+    EditText rName, studentId, email, password;
     Button btnRegister;
     Spinner spinner;
 
@@ -47,9 +47,8 @@ public class RegistrationActivity extends AppCompatActivity {
         //Get Firestore Instance
         fStore = FirebaseFirestore.getInstance();
 
-        firstName = findViewById(R.id.firstName);
-        lastName = findViewById(R.id.lastName);
-        ramId = findViewById(R.id.ramId);
+        rName = findViewById(R.id.rName);
+        studentId = findViewById(R.id.studentId);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         btnRegister = findViewById(R.id.btnRegister);
@@ -64,21 +63,15 @@ public class RegistrationActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String firstX = firstName.getText().toString();
-                final String lastX = lastName.getText().toString();
-                final String ramX = ramId.getText().toString();
+                final String rX = rName.getText().toString();
+                final String studentX = studentId.getText().toString();
                 final String emailX = email.getText().toString();
                 final String typeX = spinner.getSelectedItem().toString();
                 String pwdX = password.getText().toString();
                 int flags = 0;
 
-                if(firstX.length() < 3 || firstX.length() > 30){
-                    firstName.setError("Must be between 3-30 characters");
-                    flags++;
-                }
-
-                if(lastX.length() < 3 || lastX.length() > 30){
-                    lastName.setError("Must be between 3-30 characters");
+                if(rX.length() < 3 || rX.length() > 30){
+                    rName.setError("Must be between 3-30 characters");
                     flags++;
                 }
 
@@ -87,8 +80,8 @@ public class RegistrationActivity extends AppCompatActivity {
                     flags++;
                 }
 
-                if(!isValidRam(ramX)){
-                    ramId.setError("Format must be: R0#######");
+                if(!isValidRam(studentX)){
+                    studentId.setError("Format must be: #########");
                     flags++;
                 }
 
@@ -97,16 +90,12 @@ public class RegistrationActivity extends AppCompatActivity {
                     flags++;
                 }
 
-                if(firstX.isEmpty()){
-                    firstName.setError("Please enter first name");
+                if(rX.isEmpty()){
+                    rName.setError("Please enter first name");
                     flags++;
                 }
-                if (lastX.isEmpty()){
-                    lastName.setError("Please enter last name");
-                    flags++;
-                }
-                if (ramX.isEmpty()){
-                    ramId.setError("Please enter Ram ID");
+                if (studentX.isEmpty()){
+                    studentId.setError("Please enter Ram ID");
                     flags++;
                 }
                 if (emailX.isEmpty()){
@@ -134,9 +123,8 @@ public class RegistrationActivity extends AppCompatActivity {
                                 userID = mFirebaseAuth.getCurrentUser().getUid();
                                 DocumentReference documentReference = fStore.collection("users").document(userID);
                                 Map<String, Object> user = new HashMap<>();
-                                user.put("fName", firstX);
-                                user.put("lName", lastX);
-                                user.put("ram_id", ramX);
+                                user.put("rName", rX);
+                                user.put("student_id", studentX);
                                 user.put("email", emailX);
                                 user.put("type", typeX);
 

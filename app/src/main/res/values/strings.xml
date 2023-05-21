@@ -5,10 +5,9 @@
 
     <!-- Registration Page   -->
     <string name="please_register">회원가입</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
+    <string name="r_name">이름</string>
     <string name="student_id">학번</string>
-    <string name="e_mail">E-mail</string>
+    <string name="e_mail">이메일</string>
     <string name="password">비밀번호</string>
     <string name="register">회원가입</string>
     <string-array name="user_types">
@@ -19,7 +18,7 @@
     <!-- Login Page   -->
     <string name="please_login">로그인</string>
     <string name="loginBtn">로그인</string>
-    <string name="create_account">사용 중인 계정이 없다면</string>
+    <string name="create_account">사용 중인 계정이 없다면?</string>
 
     <!-- Logout   -->
     <string name="logout">로그아웃</string>
@@ -27,17 +26,17 @@
     <!-- Add Room   -->
     <string name="add_room">강의실 추가</string>
     <string name="capacity">수용 인원</string>
-    <string name="whiteboard">Whiteboard</string>
+    <string name="engineering">실험장비</string>
     <string name="wifi">Wi-fi</string>
     <string name="computer">컴퓨터</string>
     <string name="building">건물 이름</string>
     <string name="room_number">강의실 번호</string>
-    <string name="conklin">Conklin Hall</string>
-    <string name="business">Business</string>
+    <string name="nurigan">누리관</string>
+    <string name="hyangpagan">향파관</string>
 
     <!-- Update/Delete Room   -->
-    <string name="update_room">추가하기</string>
-    <string name="delete_room">삭제하기</string>
+    <string name="update_room">추가</string>
+    <string name="delete_room">삭제</string>
     <string name="available">사용 가능</string>
 
     <!-- Delete Room Dialog   -->
@@ -90,7 +89,7 @@
 
 
     <!-- Student Home   -->
-    <string name="current_room_reservations">예약한 강의실</string>
+    <string name="current_room_reservations">내가 예약한 강의실</string>
     <string name="no_room_reservations">예약한 강의실이 없습니다</string>
     <string name="make_room_reservation">강의실 예약</string>
 
@@ -104,14 +103,14 @@
 
     <!-- Accounts   -->
     <string name="see_accounts">모든 계정 보기</string>
-    <string name="name">Name:</string>
+    <string name="name">이름 :</string>
     <string name="disable">Disable</string>
     <string name="disabled"> - DISABLED</string>
     <string name="enable">Enable</string>
     <string name="studentID">학번 :</string>
-    <string name="role">Role:</string>
-    <string name="email">Email:</string>
-    <string name="update_account">수정하기</string>
+    <string name="role">역할:</string>
+    <string name="email">이메일 :</string>
+    <string name="update_account">수정</string>
     <string name="account_info">계정 정보 :</string>
 
     <!--Reserve a Room-->
@@ -120,7 +119,7 @@
     <string name="room_reviews">Room Reviews</string>
 
     <!-- Student Nav Drawer    -->
-    <string name="reserve_room">Reserve Room</string>
+    <string name="reserve_room">강의실 예약</string>
     <string name="reserve_book">Reserve Book</string>
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>

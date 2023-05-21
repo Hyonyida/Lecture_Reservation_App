@@ -50,15 +50,15 @@
         android:layout_height="28dp"
         style="@style/ImageViews"
         android:contentDescription="@string/computer"
-        app:layout_constraintEnd_toStartOf="@id/imageViewWhiteboard"
+        app:layout_constraintEnd_toStartOf="@id/imageViewEngineering"
         app:layout_constraintTop_toTopOf="@+id/textViewCapacity" />
 
     <ImageView
-        android:id="@+id/imageViewWhiteboard"
+        android:id="@+id/imageViewEngineering"
         android:layout_width="28dp"
         style="@style/ImageViews"
         android:layout_height="28dp"
-        android:contentDescription="@string/whiteboard"
+        android:contentDescription="@string/engineering"
         app:layout_constraintEnd_toStartOf="@+id/imageViewAvailable"
         app:layout_constraintTop_toTopOf="@+id/textViewCapacity" />
 

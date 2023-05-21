@@ -39,7 +39,8 @@ public class RoomAdapter extends FirestoreRecyclerAdapter<Room, RoomAdapter.MyVi
         public TextView capacityTextView;
         public ImageView wifiImageView;
         public ImageView computerImageView;
-        public ImageView whiteboardImageView;
+
+        public ImageView engineeringImageView;
         public ImageView availableImageView;
 
         //constructor for ViewHolder
@@ -52,7 +53,7 @@ public class RoomAdapter extends FirestoreRecyclerAdapter<Room, RoomAdapter.MyVi
             capacityTextView = view.findViewById(R.id.textViewCapacity);
             wifiImageView = view.findViewById(R.id.imageViewWifi);
             computerImageView = view.findViewById(R.id.imageViewComputer);
-            whiteboardImageView = view.findViewById(R.id.imageViewWhiteboard);
+            engineeringImageView = view.findViewById(R.id.imageViewEngineering);
             availableImageView = view.findViewById(R.id.imageViewAvailable);
 
 
@@ -108,11 +109,11 @@ public class RoomAdapter extends FirestoreRecyclerAdapter<Room, RoomAdapter.MyVi
         }
 
         //puts the correct image depending on if the whiteboard value is true or false for the room
-        if(room.isWhiteboard()){
-            myViewHolder.whiteboardImageView.setImageResource(R.drawable.ic_baseline_edit_24_green);
+        if(room.isEngineering()){
+            myViewHolder.engineeringImageView.setImageResource(R.drawable.ic_baseline_edit_24_green);
         }
         else{
-            myViewHolder.whiteboardImageView.setImageResource(R.drawable.ic_baseline_edit_24_black);
+            myViewHolder.engineeringImageView.setImageResource(R.drawable.ic_baseline_edit_24_black);
         }
 
         //puts the correct image depending on if the available value is true or false for the room

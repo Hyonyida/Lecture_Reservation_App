@@ -62,7 +62,7 @@
                 android:layout_columnSpan="3"
                 android:layout_row="4"
                 android:layout_column="0"
-                android:text="@string/whiteboard" />
+                android:text="@string/engineering" />
 
             <Switch
                 android:id="@+id/switchAvailableUpdate"
@@ -91,16 +91,16 @@
                 android:layout_column="0" >
 
                 <RadioButton
-                    android:id="@+id/radioButtonBusinessUpdate"
+                    android:id="@+id/radioButtonNuriganUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/business" />
+                    android:text="@string/nurigan" />
 
                 <RadioButton
-                    android:id="@+id/radioButtonConklinUpdate"
+                    android:id="@+id/radioButtonHyangpaganUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/conklin" />
+                    android:text="@string/hyangpagan" />
             </RadioGroup>
 
             <EditText

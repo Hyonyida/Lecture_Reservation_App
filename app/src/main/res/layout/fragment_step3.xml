@@ -103,12 +103,12 @@
             app:srcCompat="@drawable/ic_baseline_wifi_40" />
 
         <ImageView
-            android:id="@+id/img_whiteboard"
+            android:id="@+id/img_engineering"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:paddingHorizontal="12dp"
-            app:srcCompat="@drawable/ic_baseline_crop_16_9_40" />
+            app:srcCompat="@drawable/ic_baseline_engineering_40" />
 
     </LinearLayout>
 

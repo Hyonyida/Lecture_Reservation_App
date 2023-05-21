@@ -10,7 +10,7 @@ public class Room implements Parcelable {
     private String building;
     private int roomNumber;
     private int capacity;
-    private boolean whiteboard;
+    private boolean engineering;
     private boolean wifi;
     private boolean computer;
     private boolean available;
@@ -21,11 +21,11 @@ public class Room implements Parcelable {
     }
 
     //constructor for Room
-    public Room(String building, int roomNumber, int capacity, boolean whiteboard, boolean wifi, boolean computer, boolean available) {
+    public Room(String building, int roomNumber, int capacity, boolean engineering, boolean wifi, boolean computer, boolean available) {
         this.building = building;
         this.roomNumber = roomNumber;
         this.capacity = capacity;
-        this.whiteboard = whiteboard;
+        this.engineering = engineering;
         this.wifi = wifi;
         this.computer = computer;
         this.available = available;
@@ -35,7 +35,7 @@ public class Room implements Parcelable {
         building = in.readString();
         roomNumber = in.readInt();
         capacity = in.readInt();
-        whiteboard = in.readByte() != 0;
+        engineering = in.readByte() != 0;
         wifi = in.readByte() != 0;
         computer = in.readByte() != 0;
         available = in.readByte() != 0;
@@ -93,13 +93,13 @@ public class Room implements Parcelable {
     }
 
     //gets whiteboard value
-    public boolean isWhiteboard() {
-        return whiteboard;
+    public boolean isEngineering() {
+        return engineering;
     }
 
     //sets whiteboard value
-    public void setWhiteboard(boolean whiteboard) {
-        this.whiteboard = whiteboard;
+    public void setEngineering(boolean engineering) {
+        this.engineering = engineering;
     }
 
     //gets wifi value
@@ -142,7 +142,7 @@ public class Room implements Parcelable {
         parcel.writeString(building);
         parcel.writeInt(roomNumber);
         parcel.writeInt(capacity);
-        parcel.writeByte((byte) (whiteboard ? 1 : 0));
+        parcel.writeByte((byte) (engineering ? 1 : 0));
         parcel.writeByte((byte) (wifi ? 1 : 0));
         parcel.writeByte((byte) (computer ? 1 : 0));
         parcel.writeByte((byte) (available ? 1 : 0));

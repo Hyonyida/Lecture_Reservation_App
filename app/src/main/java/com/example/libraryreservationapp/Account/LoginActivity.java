@@ -181,8 +181,8 @@ public class LoginActivity extends AppCompatActivity {
                             //gets the reason
                             String reason = documentSnapshot.getString("reason");
                             //gets their name
-                            String fName = documentSnapshot.getString("fName");
-                            Toast.makeText(getApplicationContext(), fName + ", your account has been disabled", Toast.LENGTH_LONG).show();
+                            String rName = documentSnapshot.getString("rName");
+                            Toast.makeText(getApplicationContext(), rName + ", your account has been disabled", Toast.LENGTH_LONG).show();
                         }
                         else{
                             //checks which role they are to start the correct activity

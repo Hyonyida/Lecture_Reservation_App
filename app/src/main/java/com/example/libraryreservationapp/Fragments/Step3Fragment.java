@@ -54,7 +54,7 @@ public class Step3Fragment extends Fragment {
 
     TextView txt_reservation_date_text, txt_reservation_time_text, txt_reservation_building_text, txt_reservation_room_text, txt_reservation_capacity_text;
     Button btn_confirm;
-    ImageView img_computer, img_wifi, img_whiteboard;
+    ImageView img_computer, img_wifi, img_engineering;
     FirebaseFirestore fStore;
     Context mContext;
     String reservationID;
@@ -83,8 +83,8 @@ public class Step3Fragment extends Fragment {
             img_computer.setColorFilter(getResources().getColor(R.color.available));
         if(Common.currentRoom.isWifi())
             img_wifi.setColorFilter(getResources().getColor(R.color.available));
-        if(Common.currentRoom.isWhiteboard())
-            img_whiteboard.setColorFilter(getResources().getColor(R.color.available));
+        if(Common.currentRoom.isEngineering())
+            img_engineering.setColorFilter(getResources().getColor(R.color.available));
 
     }
 
@@ -128,7 +128,7 @@ public class Step3Fragment extends Fragment {
 
         img_computer = itemView.findViewById(R.id.img_computer);
         img_wifi = itemView.findViewById(R.id.img_wifi);
-        img_whiteboard = itemView.findViewById(R.id.img_whiteboard);
+        img_engineering = itemView.findViewById(R.id.img_engineering);
 
         btn_confirm = itemView.findViewById(R.id.btn_confirm);
 
@@ -316,6 +316,6 @@ public class Step3Fragment extends Fragment {
     private void resetVectorImages(){
         img_computer.setColorFilter(getResources().getColor(R.color.colorButton));
         img_wifi.setColorFilter(getResources().getColor(R.color.colorButton));
-        img_whiteboard.setColorFilter(getResources().getColor(R.color.colorButton));
+        img_engineering.setColorFilter(getResources().getColor(R.color.colorButton));
     }
 }

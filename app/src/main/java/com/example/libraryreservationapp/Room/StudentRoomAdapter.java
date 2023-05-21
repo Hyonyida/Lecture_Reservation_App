@@ -50,7 +50,7 @@ public class StudentRoomAdapter extends RecyclerView.Adapter<StudentRoomAdapter.
             holder.img_computer.setColorFilter(context.getResources().getColor(R.color.available));
         if(roomList.get(i).isWifi())
             holder.img_wifi.setColorFilter(context.getResources().getColor(R.color.available));
-        if(roomList.get(i).isWhiteboard())
+        if(roomList.get(i).isEngineering())
             holder.img_whiteboard.setColorFilter(context.getResources().getColor(R.color.available));
 
 

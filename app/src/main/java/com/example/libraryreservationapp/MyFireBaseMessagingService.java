@@ -17,7 +17,7 @@ public class MyFireBaseMessagingService extends FirebaseMessagingService { Strin
         course=remoteMessage.getData().get("course");
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext())
-                        .setSmallIcon(R.drawable.ic_library)
+                        .setSmallIcon(R.drawable.ic_door)
                         .setContentTitle(title)
                         .setContentText(course);
         NotificationManager manager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);

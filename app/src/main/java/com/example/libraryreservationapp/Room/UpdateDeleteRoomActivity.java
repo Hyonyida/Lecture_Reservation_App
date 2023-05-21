@@ -60,7 +60,7 @@ public class UpdateDeleteRoomActivity extends AppCompatActivity implements Delet
         wifiSwitch = findViewById(R.id.switchWifiUpdate);
         whiteboardSwitch = findViewById(R.id.switchWhiteboardUpdate);
         availableSwitch = findViewById(R.id.switchAvailableUpdate);
-        whitmanRadioButton = findViewById(R.id.radioButtonBusinessUpdate);
+        whitmanRadioButton = findViewById(R.id.radioButtonNuriganUpdate);
 
         //gets the document ID of the item clicked on from the intent
         Intent intent = getIntent();
@@ -135,11 +135,11 @@ public class UpdateDeleteRoomActivity extends AppCompatActivity implements Delet
         else{
             //switches the selected building id to the proper string of the building
             switch (selectedBuilding){
-                case R.id.radioButtonBusinessUpdate:
-                    building = getString(R.string.business);
+                case R.id.radioButtonNuriganUpdate:
+                    building = getString(R.string.nurigan);
                     break;
-                case R.id.radioButtonConklinUpdate:
-                    building = getString(R.string.conklin);
+                case R.id.radioButtonHyangpaganUpdate:
+                    building = getString(R.string.hyangpagan);
                     break;
             }
         }
@@ -226,11 +226,11 @@ public class UpdateDeleteRoomActivity extends AppCompatActivity implements Delet
                     String building = document.getString("building").trim();
 
                     //selects the correct radioButton to check depending on if it matches the one from the database
-                    if(building.equals(getString(R.string.business))){
-                        buildingRadioGroup.check(R.id.radioButtonBusinessUpdate);
+                    if(building.equals(getString(R.string.nurigan))){
+                        buildingRadioGroup.check(R.id.radioButtonNuriganUpdate);
                     }
-                    if(building.equals(getString(R.string.conklin))){
-                        buildingRadioGroup.check(R.id.radioButtonConklinUpdate);
+                    if(building.equals(getString(R.string.hyangpagan))){
+                        buildingRadioGroup.check(R.id.radioButtonHyangpaganUpdate);
                     }
                 }
                 else{

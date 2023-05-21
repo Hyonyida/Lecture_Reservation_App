@@ -33,7 +33,8 @@ public class AddRoomActivity extends AppCompatActivity {
     private RadioGroup buildingRadioGroup;
     private Switch computerSwitch;
     private Switch wifiSwitch;
-    private Switch whiteboardSwitch;
+
+    private Switch engineeringSwitch;
     private RadioButton whitmanRadioButton;
     private FirebaseFirestore fStore;
 
@@ -51,7 +52,7 @@ public class AddRoomActivity extends AppCompatActivity {
         buildingRadioGroup = findViewById(R.id.radioGroupBuilding);
         computerSwitch = findViewById(R.id.switchComputer);
         wifiSwitch = findViewById(R.id.switchWifi);
-        whiteboardSwitch = findViewById(R.id.switchWhiteboard);
+        engineeringSwitch = findViewById(R.id.switchEngineering);
         whitmanRadioButton = findViewById(R.id.radioButtonBusiness);
 
         //Add Room on click listener
@@ -94,7 +95,7 @@ public class AddRoomActivity extends AppCompatActivity {
         //gets the values of the switches
         boolean computer = computerSwitch.isChecked();
         boolean wifi = wifiSwitch.isChecked();
-        boolean whiteboard = whiteboardSwitch.isChecked();
+        boolean whiteboard = engineeringSwitch.isChecked();
         boolean available = true;
 
         //gets the selected radiobutton
@@ -109,10 +110,10 @@ public class AddRoomActivity extends AppCompatActivity {
             //switches the selected building id to the proper string of the building
             switch (selectedBuilding){
                 case R.id.radioButtonBusiness:
-                    building = getString(R.string.business);
+                    building = getString(R.string.nurigan);
                     break;
                 case R.id.radioButtonConklin:
-                    building = getString(R.string.conklin);
+                    building = getString(R.string.hyangpagan);
                     break;
             }
         }

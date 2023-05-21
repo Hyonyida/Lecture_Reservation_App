@@ -82,7 +82,7 @@
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:layout_marginEnd="8dp"
-        android:contentDescription="@string/whiteboard"
+        android:contentDescription="@string/engineering"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewReservationBuildingRoomNumber" />
 </androidx.constraintlayout.widget.ConstraintLayout>

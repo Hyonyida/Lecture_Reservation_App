@@ -128,15 +128,14 @@ public class DisableAccountActivity extends AppCompatActivity implements Disable
                     DocumentSnapshot document = task.getResult();
 
                     //gets the ram id value from database
-                    String ramid = document.getString("ram_id").trim();
+                    String studentid = document.getString("studentid").trim();
                     //sets the editText to the value
-                    ramIDEditText.setText(ramid);
+                    ramIDEditText.setText(studentid);
 
                     //gets the name values from database
-                    String fName = document.getString("fName").trim();
-                    String lName = document.getString("lName").trim();
+                    String fName = document.getString("rName").trim();
                     //sets the editText to the value
-                    nameEditText.setText(fName + " " + lName);
+                    nameEditText.setText(fName);
 
                     //gets the email value from database
                     String email = document.getString("email").trim();
